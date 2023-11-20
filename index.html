@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collaborations Network Graph</title>
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="my_dataviz">
+        <div id="buttons">
+            <label for="search">Search: </label>
+            <input type="text" id="search" />
+            <button onclick="searchNodes()">Search</button>
+            <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+            <button onmouseover="displaySchoolColors()" onmouseout="hideSchoolColors()">Display School Colors</button>
+        </div>
+    </div>
+    <div id="school-legend" onmouseover="showLegend()" onmouseout="hideLegend()"></div>
+    <script src="script.js"></script>
+</body>
+</html>
